@@ -1,5 +1,5 @@
 # Git, Github에 대해 알아오기 및 사용법
-## Git과 Github는 무엇인가?
+## 1. Git과 Github는 무엇인가?
 1. Git   
 Git은 **Linus Torvalds**가 **Linux Kernel** 개발을 위해 만든 **분산형 버전 관리 시스템**(Distributed Version Control System, DVCS)으로,
 소프트웨어 개발 과정에서 **파일의 변경 이력을 효율적으로 관리하고 협업을 가능하게 하는 시스템**임.
@@ -19,7 +19,7 @@ Github는 **Git을 사용하는 프로젝트를 지원하는 클라우드 기반
 | 동작 환경 | 내 컴퓨터(로컬) | 인터넷(클라우드) |
 | 주요 목적 | 파일의 변경 이력 추적 및 버전 관리 | 원격 저장, 협업, 코드 공유 및 리뷰 |
 | 사용 방식 | 주로 명령어(CLI) | 웹 브라우저(GUI) |
-## Git 사용법
+## 2. Git 사용법
 1. **Git 시작 및 상태 확인**  
     - `git init`  
        - 내 컴퓨터의 일반 폴더를 Git이 관리하는 저장소로 만든다.(프로젝트를 처음 시작할 때 한 번만 입력함)
@@ -41,7 +41,7 @@ Github는 **Git을 사용하는 프로젝트를 지원하는 클라우드 기반
    내 컴퓨터(로컬)에 만들어진 버전을 다른 사람들과 공유하기 위해 GitHub(원격 저장소)로 보냄.
     - `git push origin main`
          - 내 로컬 저장소에서 작업한 커밋들을 원격 저장소(origin, 일반적으로 Github 저장소 URL)의 main 브랜치로 업로드하여 반영하는 명령.
-## Github 사용법
+## 3. Github 사용법
 1. **저장소(Repository) 만들기**  
    가장 먼저 내 프로젝트를 담을 저장소를 만들어야 함.
    1. **New Repository**: GitHub 메인 화면 오른쪽 상단의 `+` 버튼을 눌러 `New repository`를 클릭.
