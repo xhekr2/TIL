@@ -53,8 +53,8 @@ Dart OOP에 대해 정리한다. 예시코드를 포함한 모든 정보는 Chat
         final String name;
         final int age;
         Person({required this.name, this.age = 0});
-    }
-    ```
+     }
+     ```
 - 주의: `const` 생성자는 모든 필드가 `final`이어야 한다. `factory` 생성자는 값을 반환해야 한다.
 
 ## Immutable programming (불변성)
