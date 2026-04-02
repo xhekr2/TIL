@@ -33,7 +33,7 @@ void mian() {
 }
 ```
 
-## prnt() 함수
+## print() 함수
 
 `print()` 함수는 문자열을 콘솔로 출력하는 함수다.
 
@@ -69,17 +69,34 @@ void main() {
     
     2rkehx
     
-
 ## dynamic을 사용한 변수 선언
+var은 변수의 값을 통해 타입을 추론하는 키워드이며, 초기값이 있을 경우 해당 타입으로 고정된다. 따라서 다른 타입의 값을 저장하면 에러가 발생한다. 하지만 초기값 없이 선언된 var 변수는 dynamic 타입이 되어 다양한 타입의 값을 저장할 수 있다. dynamic 키워드는 항상 타입이 고정되지 않아 여러 타입의 값을 저장할 수 있다.
 
-var 타입은 변수의 값을 사용해서 변수의 타입을 유추하는 키워드다. 타입을 한 번 유추하면 추론된 타입이 고정된다. 따라서 고정된 변수 타입과 다른 변수 타입의 값을 같은 변수에 다시 저장하려 하면 에러가 난다. 하지만 dynamic 키워드를 사용하면 변수의 타입이 고정되지 않아서 다른 타입의 값을 저장할 수 있다.
-
-다음 코드는 정상 작동한다.
+dynamic을 사용해 변수를 선언하면 아래와 같은 코드도 정상적으로 작동한다.
 
 ```dart
 void main() {
 	dynamic name = 'xhekr2';
 	name = 1;
+	name = 2.5;
+	name = true;
+}
+```
+
+var로 초기값 없이 선언된 변수는 dynamic 타입으로 추론되며, 초기값이 null이기 때문에 runtimeType은 Null로 출력된다.
+
+```dart
+void main() {
+	var name; // var 키워드는 초기값이 없을 경우 dynamic 타입으로 추론된다
+	print(name.runtimeType); // 출력: Null
+	name = 'xhekr2';
+	print(name.runtimeType); // 출력: String
+	name = 1;
+	print(name.runtimeType); // 출력: int
+	name = 2.5;
+	print(name.runtimeType); // 출력: double
+	name = true;
+	print(name.runtimeType); // 출력: bool
 }
 ```
 
